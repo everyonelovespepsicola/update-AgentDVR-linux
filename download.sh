@@ -1,14 +1,3 @@
-#!/bin/sh
-
-# Download script for AgentDVR/ Linux
-# This will download the latest Agent DVR zip file for your platform. Unzip the files over the existing installation to update. 
-
-machine_has() {
-    eval $invocation
-
-    command -v "$1" > /dev/null 2>&1
-    return $?
-}
 
 echo "finding installer for $(arch)"
 purl="https://www.ispyconnect.com/api/Agent/DownloadLocation2?productID=24&is64=true&platform=Linux"
