@@ -1,7 +1,7 @@
 # update AgentDVR linux
 
 
-cd /AgentDVR
+#cd /AgentDVR
 
 sudo systemctl stop AgentDVR.service
 
