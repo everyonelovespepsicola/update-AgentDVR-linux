@@ -8,6 +8,7 @@ sudo systemctl stop AgentDVR.service
 bash <(curl -s "https://raw.githubusercontent.com/ispysoftware/agent-install-scripts/main/v2/download.sh")
 
 unzip -o AgentDVR.zip
+
 rm -f AgentDVR.zip
 
 chmod +x Agent
