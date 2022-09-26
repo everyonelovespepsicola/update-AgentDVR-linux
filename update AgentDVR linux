@@ -13,6 +13,6 @@ rm  Agent*.zip
 
 chmod +x Agent
 
-find . -name "*.sh" -exec chmod +x {} \;
+find . -name "*.sh" -exec chmod +x {} \backslash;
 
 sudo systemctl start AgentDVR.service
