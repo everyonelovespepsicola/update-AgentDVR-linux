@@ -1,7 +1,7 @@
 # update AgentDVR linux
 
 
-#cd /AgentDVR
+#cd $ABSOLUTE_PATH/AgentDVR
 
 sudo systemctl stop AgentDVR.service
 
@@ -16,3 +16,8 @@ chmod +x Agent
 find . -name "*.sh" -exec chmod +x {} \;
 
 sudo systemctl start AgentDVR.service
+
+#cd $ABSOLUTE_PATH/AgentDVR/ffmpeg-build 
+
+curl -s -L "https://raw.githubusercontent.com/ispysoftware/agent-install-scripts/main/ffmpeg_build.sh" | bash -s -- --build --enable-gpl-and-non-free
+
